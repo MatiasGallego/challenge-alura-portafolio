@@ -1,7 +1,7 @@
 
 header,body{
     background: #F5F5F5;
-    padding: 20px 0;
+    padding-top: 20px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -31,15 +31,15 @@ header,body{
     font-weight: bold;    
 }
 
-.presentacion,.sobre-mi,.caja-skill-hobbie,.formacion-academica{    
+.presentacion,.sobre-mi,.caja-skill-hobbie,.formacion-academica,.experiencia-programacion,.formulario-contacto{    
     width: 1024px;
     margin: 0px auto;  
-    margin-top: 100px;     
+    margin-top: 7%;     
 }
 
 .presentacion h1{
     font-weight: bold;
-    font-size: 52px;
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
@@ -57,12 +57,16 @@ header,body{
     margin-top: 30px;
 }
 
+.lista-redes a{    
+    text-decoration: none;
+}
+
 .lista-redes li{
     display: inline;  
     margin-right: 10px;             
 }
 
-.contenedor-sobre-mi,.contenedor-formacion-academica{
+.contenedor-sobre-mi,.contenedor-formacion-academica,.contenedor-formulario-contacto{
     background: #EAF2FD;
     padding-bottom: 20px;            
 }
@@ -79,7 +83,7 @@ header,body{
 }
 
 /* Skilles y Hobbies*/
-.caja-skill-hobbie h1{
+.caja-skill-hobbie h1,.formacion-academica h1,.experiencia-programacion h1{
     text-align: center;
     font-size: 32px;
     font-weight: bold;
@@ -114,6 +118,13 @@ header,body{
     font-weight: bold;
 }
 
+/* Formacion Academica */
+
+.formacion-academica{
+    padding-top: 2%;
+}
+
+
 .lista-formacion-academica li{
     display: inline-block;       
     background: white; 
@@ -140,4 +151,140 @@ header,body{
     background:#EAF2FD;
     padding-top: 5px;
     font-size: 16px;
+}
+
+/* Experiencia programacion */
+
+.caja-experiencia-programacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.caja-experiencia-programacion h1{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.caja-experiencia-programacion p{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.boton-repositorio{
+    height: 51px;
+    width: 110px;
+    font-size: 16px;
+    border: 1px solid #2A7AE4;    
+    color: #2A7AE4;
+
+}
+
+.boton-demo{
+    height: 51px;
+    width: 110px;
+    font-size: 16px;
+    background-color: #2A7AE4;
+    color: white;
+    margin-left: 10px;
+}
+
+/* formulario contacto*/
+
+.formulario-contacto{
+    display: flex;
+    gap: 2%;
+}
+
+.contenedor-formulario-contacto h1{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label,fieldset legend{
+    display: block;
+    font-size: 20px;    
+}
+
+.label-padron{    
+    width: 100%;
+    background:  white;
+    font-size: 14px;
+}
+
+.input-padron{
+    height: 45px;
+    width: 100%;        
+    margin-bottom: 20px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding: 0;
+}
+
+.input-padron:focus{
+    outline: none;
+    border-color: #2A7AE4;       
+    transition: all ease-in-out .100s;    
+}
+
+.boton-envio{   
+    font-size: 16px;
+    background-color: #2A7AE4;
+    color: white;
+    width: 144px;
+    height: 51px;
+}
+
+footer{
+    background: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media screen and (max-width:480px){
+    .cabecera,.presentacion,.sobre-mi,.caja-skill-hobbie,.formacion-academica,.experiencia-programacion,.formulario-contacto{    
+        width: auto;          
+    }
+
+     .lista-formacion-academica{
+        text-align: center;
+    }
+
+    .lista-formacion-academica li{
+        vertical-align: baseline;
+    }
+
+    .lista-formacion-academica img{
+        margin-left: 0%;
+    }
+
+    .caja-experiencia-programacion{
+        text-align: center;
+    }
+
+    .caja-experiencia-programacion img,.formulario-contacto img{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .caja-experiencia-programacion{
+        display: block;
+    }
+    
+    .formulario-contacto {
+        display: block;
+        gap: 2%;
+    }
+
+
 }

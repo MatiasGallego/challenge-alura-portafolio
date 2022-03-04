@@ -28,29 +28,32 @@
         </header>
         <main>   
             <a name="ancla-presentacion"></a>
-            <div class="presentacion">
-                <img src="imagenes/imagen_perfil.png" alt="imagen de perfil" class="foto-perfil">
-                <h1>Hola, mi nombre es Matias Gallego y construyo paginas web</h1>
-                <h2>Soy estudiante de licenciatura en administracion y actualmente</h2>
-                <h2>estoy participando del proyecto de Oracle One.</h2>                
-                <nav>                    
-                    <ul class="lista-redes">                        
-                        <li><a>GitHub</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>
-                        <li><a>Linkedin</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>
-                        <li><a>Instagram</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>
-                        <li><a>Curriculum</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>                        
-                    </ul>
-                </nav>
-            </div>
-            <section class="contenedor-sobre-mi">
+            <section name="section-presentacion">
+                <div class="presentacion">
+                    <img src="imagenes/imagen_perfil.png" alt="imagen de perfil" class="foto-perfil">
+                    <h1>Hola, mi nombre es Matias Gallego y construyo paginas web</h1>
+                    <h2>Soy estudiante de licenciatura en administracion y actualmente</h2>
+                    <h2>estoy participando del proyecto de Oracle One.</h2>                
+                    <nav>                    
+                        <ul class="lista-redes">                        
+                            <li><a href="https://github.com/MatiasGallego/">GitHub</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>
+                            <li><a href="https://www.linkedin.com/in/matias-gallego-06717346/">Linkedin</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>
+                            <li><a href="https://www.instagram.com/m.matias.gallego/">Instagram</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>
+                            <li><a>Curriculum</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>                        
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <section name="section-sobre-mi" class="contenedor-sobre-mi">
                 <div class="sobre-mi">
                     <h1>Sobre Mi</h1>
-                    <p>ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. 
+                    <p>Hola mi nombre es Matias Gallego, soy de Córdoba, Argentina tengo 37 años. Me encuentro trabajando en un empresa de servicios de salud. Actualmente me encuentro iniciandome en python
+                    y realizando el curso de Oracle-One
                     </p>
                 </div> 
             </section>
             <a name="ancla-skill-hobbies"></a>
-            <section class="skill-hobbies">                
+            <section name="section-skill-hobbies" class="skill-hobbies">                
                 <div class="caja-skill-hobbie">   
                     <h1>Skills</h1>                 
                     <nav>                    
@@ -97,7 +100,7 @@
                 </div>
             </section>
             <a name="ancla-formacion-academica"></a>
-            <section class="contenedor-formacion-academica">
+            <section name="section-formacion-academica" class="contenedor-formacion-academica">
                 <div class="formacion-academica">
                     <h1>Formación Académica</h1>                 
                     <nav>                    
@@ -116,15 +119,60 @@
                     </nav>
                 </div>
             </section>
-            <section class="contenedor-experiencia-programacion">
-
+            <section name="section-experiencia-programacion" class="contenedor-experiencia-programacion">
+                <div class="experiencia-programacion">  
+                        <h1>Experiencia Laboral</h1>                                
+                        <div class="caja-experiencia-programacion">
+                            <img src="imagenes/encriptador.png" class="imagenes-experiencia" alt="imagen de programa para encriptar texto">
+                            <div>
+                                <h1>Encriptador de texto</h1>
+                                <p>Challenge Alura-Oracle</p>
+                                <a href="https://github.com/MatiasGallego/challenge-alura-encriptador"><input type="button" value="Repositorio" class="boton-repositorio"></a><a href="https://matiasgallego.github.io/challenge-alura-encriptador/"><input type="button" value="Ver demo" class="boton-demo"></a>
+                            </div>
+                        </div>
+                        <div class="caja-experiencia-programacion">
+                            <div>
+                                <h1>Juego del ahorcado</h1>
+                                <p>Challenge Alura-Oracle</p>
+                                <a href="https://github.com/MatiasGallego/challenge-alura-ahoracado"><input type="button" value="Repositorio" class="boton-repositorio"></a><a href="https://matiasgallego.github.io/challenge-alura-ahoracado/"></a><input type="button" value="Ver demo" class="boton-demo">
+                            </div>                            
+                            <img src="imagenes/ahorcado.png" class="imagenes-experiencia" alt="imagen de juego de ahorcado">                                                        
+                        </div>
+                        
+                </div>
             </section>
-            <section class="formulario-contacto">
+            <section name="section-formulario-contacto" class="contenedor-formulario-contacto">
+             <div class="formulario-contacto">
+                <img src="imagenes/Sintitulo.png" alt="imagen de tubo telefonico"> 
 
+                
+                <div class="contenedor-formulario-contacto">
+                    <h1>Contacto</h1>    
+                    <p>¿Quieres contactarme?</p>  
+                    <p>Complete el siguiente formulario y me pondré en contacto con usted</p>              
+                    <form >     
+
+                        <label for="nombreApellido" class="label-padron">Nombre y Apellido:</label>
+                        <input type="text" id="nombreApellido" class="input-padron" required >
+                
+                        <label for="correoElectronico" class="label-padron">Correo Electronico:</label>
+                        <input type="email" id="correoElectronico" class="input-padron" required placeholder="email@dominio.com">
+                
+                        <label for="asunto" class="label-padron">Asunto:</label>
+                        <input type="text" id="asunto" class="input-padron" required>
+                
+                        <label for="mensaje" class="label-padron">Mensaje</label>
+                        <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                        
+                        <input type="submit" value="Enviar Mensaje" class="boton-envio">
+                    </form>
+                </div>
+             </div>
             </section>
         </main>
         <footer>
-            
+            <p>Desarrollado por Matias Gallego</p>
+            <p>2020</p>            
         </footer>
     </body>
     
