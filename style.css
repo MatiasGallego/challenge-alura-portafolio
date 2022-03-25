@@ -3,6 +3,7 @@ header,body{
     background: #F5F5F5;
     padding-top: 20px;
     font-family: 'Raleway', sans-serif;
+    
 }
 
 .cabecera{    
@@ -18,7 +19,12 @@ header,body{
 
 .navegacion li{
     display: inline;   
-    margin: 0 0 0 15px;         
+    margin: 0 0 0 15px; 
+    font-weight: 550;        
+}
+
+.navegacion li:last-child{
+    font-weight: bold;    
 }
 
 .navegacion a{
@@ -27,9 +33,10 @@ header,body{
     font-size: 16px;
 }
 
-.navegacion li:last-child{
-    font-weight: bold;    
+.navegacion a:hover,.lista-redes a:hover{
+    color:#2A7AE4;        
 }
+
 
 .presentacion,.sobre-mi,.caja-skill-hobbie,.formacion-academica,.experiencia-programacion,.formulario-contacto{    
     width: 1024px;
@@ -111,7 +118,11 @@ header,body{
 
 .contenedor-lista-skill-hobbie img{
     margin-bottom: 0.5em;
+}
 
+.contenedor-lista-skill-hobbie:hover{
+    transition: 1s all;
+    transform: scale(1.20);
 }
 
 .contenedor-lista-skill-hobbie p{
@@ -124,13 +135,18 @@ header,body{
     padding-top: 2%;
 }
 
+.lista-formacion-academica{
+    text-align: center;
+}
+
 
 .lista-formacion-academica li{
     display: inline-block;       
     background: white; 
     width: 368px;
     height: 268px;   
-    vertical-align: top;     
+    vertical-align: top;
+    text-align: initial;     
 }
 
 .lista-formacion-academica img {
@@ -244,6 +260,14 @@ form label,fieldset legend{
     height: 51px;
 }
 
+.boton-envio-deshabilidado{   
+    font-size: 16px;
+    background-color: #d3d7db;
+    color: white;
+    width: 144px;
+    height: 51px;    
+}
+
 footer{
     background: white;
     text-align: center;
@@ -255,12 +279,20 @@ footer{
         width: auto;          
     }
 
-     .lista-formacion-academica{
-        text-align: center;
+    .navegacion li{
+        visibility: hidden;
+        float: left;
+        width: 2px;
+        margin: 0 0 0 8px;
+    }
+
+    .navegacion li:last-child{
+        visibility: visible;
     }
 
     .lista-formacion-academica li{
         vertical-align: baseline;
+        text-align: center;
     }
 
     .lista-formacion-academica img{
@@ -286,5 +318,40 @@ footer{
         gap: 2%;
     }
 
+}
+
+@media screen and (max-width:700px){
+    .cabecera,.presentacion,.sobre-mi,.caja-skill-hobbie,.formacion-academica,.experiencia-programacion,.formulario-contacto{    
+        width: auto;          
+    }
+
+ 
+    .lista-formacion-academica li{
+        vertical-align: baseline;
+        text-align: center;
+    }
+
+    .lista-formacion-academica img{
+        margin-left: 0%;
+    }
+
+    .caja-experiencia-programacion{
+        text-align: center;
+    }
+
+    .caja-experiencia-programacion img,.formulario-contacto img{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .caja-experiencia-programacion{
+        display: block;
+    }
+    
+    .formulario-contacto {
+        display: block;
+        gap: 2%;
+    }
 
 }

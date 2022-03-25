@@ -7,7 +7,7 @@
         <title>Portafolio</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">        
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet" />
     </head>
 
     <body>        
@@ -36,10 +36,10 @@
                     <h2>estoy participando del proyecto de Oracle One.</h2>                
                     <nav>                    
                         <ul class="lista-redes">                        
-                            <li><a href="https://github.com/MatiasGallego/">GitHub</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>
-                            <li><a href="https://www.linkedin.com/in/matias-gallego-06717346/">Linkedin</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>
-                            <li><a href="https://www.instagram.com/m.matias.gallego/">Instagram</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>
-                            <li><a>Curriculum</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>                        
+                            <li><a href="https://github.com/MatiasGallego/" target="_blank">GitHub</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>
+                            <li><a href="https://www.linkedin.com/in/matias-gallego-06717346/" target="_blank">Linkedin</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>
+                            <li><a href="https://www.instagram.com/m.matias.gallego/" target="_blank">Instagram</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>
+                            <li><a href="curriculum.pdf" target="_blank" >Curriculum</a><img src="imagenes/fecha_arriba.png" alt="imagen de una flecha" class="flecha"></li>                        
                         </ul>
                     </nav>
                 </div>
@@ -150,21 +150,22 @@
                     <h1>Contacto</h1>    
                     <p>¿Quieres contactarme?</p>  
                     <p>Complete el siguiente formulario y me pondré en contacto con usted</p>              
-                    <form >     
+                    <form name="form" id="formularioContacto">     
 
                         <label for="nombreApellido" class="label-padron">Nombre y Apellido:</label>
-                        <input type="text" id="nombreApellido" class="input-padron" required >
+                        <input type="text" name="nombre" id="nombreApellido" class="input-padron" maxlength="50" required>
                 
                         <label for="correoElectronico" class="label-padron">Correo Electronico:</label>
                         <input type="email" id="correoElectronico" class="input-padron" required placeholder="email@dominio.com">
                 
                         <label for="asunto" class="label-padron">Asunto:</label>
-                        <input type="text" id="asunto" class="input-padron" required>
+                        <input type="text" id="asunto" class="input-padron" maxlength="50" required>
                 
                         <label for="mensaje" class="label-padron">Mensaje</label>
-                        <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                        <textarea cols="70" rows="10" id="mensaje" class="input-padron" maxlength="300" required></textarea>
                         
-                        <input type="submit" value="Enviar Mensaje" class="boton-envio">
+                        <input type="submit" id="botonSubmit"  value="Enviar Mensaje" class="boton-envio-deshabilidado" >
+                        
                     </form>
                 </div>
              </div>
@@ -174,6 +175,6 @@
             <p>Desarrollado por Matias Gallego</p>
             <p>2020</p>            
         </footer>
-    </body>
-    
+        <script src="validaciones.js"></script>
+    </body>    
 </html>
